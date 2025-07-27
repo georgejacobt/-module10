@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 # get incidents by machine type (elevators/escalators)
 # field is called "unit_type" in WMATA API response
+# adding a comment to trigger a build
 @app.route("/incidents/<unit_type>", methods=["GET"])
 def get_incidents(unit_type):
   # create an empty list called 'incidents'
